@@ -1,0 +1,38 @@
+{
+  "name": "map",
+  "version": "1.0.0",
+  "description": "INCOIS Ocean Observation Network Backend API",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "incois",
+    "ocean",
+    "buoys",
+    "argo",
+    "oceanography",
+    "marine-data"
+  ],
+  "author": "Your Name",
+  "license": "ISC",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.12.2",
+    "cheerio": "^1.1.2",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "http-proxy-middleware": "^3.0.5",
+    "json2csv": "^6.0.0-alpha.2",
+    "node-cache": "^5.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

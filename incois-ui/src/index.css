@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for the INCOIS dashboard */
+@layer components {
+  .glass-morphism {
+    @apply bg-white/20 backdrop-blur-md border border-white/30;
+  }
+  
+  .ocean-gradient {
+    @apply bg-gradient-to-br from-blue-900 via-blue-700 to-cyan-500;
+  }
+  
+  .chart-container {
+    @apply relative h-64 w-full;
+  }
+  
+  .stat-card {
+    @apply glass-morphism rounded-2xl p-6 text-center shadow-lg hover:scale-105 transition-transform duration-300;
+  }
+  
+  .btn-primary {
+    @apply px-6 py-2 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-lg font-semibold hover:from-blue-600 hover:to-cyan-600 transition-all duration-300 shadow-lg;
+  }
+  
+  .btn-success {
+    @apply px-6 py-2 bg-gradient-to-r from-green-500 to-blue-500 rounded-lg font-semibold hover:from-green-600 hover:to-blue-600 transition-all duration-300 shadow-lg;
+  }
+}
+
+/* Leaflet map custom styles */
+.leaflet-container {
+  @apply rounded-2xl;
+}
+
+.leaflet-popup-content {
+  @apply text-gray-800;
+}
+
+/* Chart.js custom styles */
+.chartjs-render-monitor {
+  @apply rounded-lg;
+}
+
+/* Loading spinner */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+/* Custom scrollbar for better UX */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-white/10 rounded-lg;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-white/30 rounded-lg hover:bg-white/50;
+}
